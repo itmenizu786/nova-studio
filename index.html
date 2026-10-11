@@ -1,0 +1,482 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080811">
+  <meta name="description" content="NOVA STUDIO — discover creative resources and explore AI-powered design ideas.">
+  <title>NOVA STUDIO — Create Beyond Ordinary</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="site-header">
+    <a href="#home" class="brand" aria-label="NOVA STUDIO home">
+      <span class="brand-symbol">N<span>✳</span></span>
+      <span class="brand-name">NOVA<span>STUDIO</span></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav">
+      <a class="nav-link active" href="#home">Home</a>
+      <a class="nav-link" href="#ai-lab">AI Design Lab <span class="nav-new">NEW</span></a>
+      <a class="nav-link" href="#marketplace">Marketplace</a>
+      <a class="nav-link" href="#services">Services</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-button" id="themeToggle" aria-label="Switch color theme" title="Switch theme">
+        <span id="themeIcon">☼</span>
+      </button>
+      <button class="icon-button" id="wishlistButton" aria-label="Open wishlist">
+        ♡ <span class="count-badge" id="wishlistCount">0</span>
+      </button>
+      <button class="cart-button" id="cartButton">
+        <span>Bag</span>
+        <span class="cart-icon">↗</span>
+        <span class="count-badge" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-shell" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow">
+          <span class="status-dot"></span>
+          YOUR NEXT CREATIVE OBSESSION
+        </div>
+
+        <h1>Create beyond<br>the <span class="gradient-text">ordinary.</span></h1>
+
+        <p class="hero-description">
+          Discover standout digital designs, explore AI-powered creativity,
+          and bring your next big idea to life.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#ai-lab" class="button button-primary">
+            Explore AI Lab <span>↗</span>
+          </a>
+          <a href="#marketplace" class="button button-secondary">
+            Explore marketplace
+          </a>
+        </div>
+
+        <div class="hero-proof">
+          <div class="avatar-stack" aria-hidden="true">
+            <span>N</span><span>✦</span><span>✳</span>
+          </div>
+          <div>
+            <strong>Ideas meet imagination.</strong>
+            <p>A new space for creative minds.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-label="Creative design previews">
+        <div class="art-orbit orbit-one"></div>
+        <div class="art-orbit orbit-two"></div>
+        <div class="hero-glow"></div>
+
+        <div class="floating-tag tag-top">
+          <span class="tag-icon">✳</span>
+          <span><strong>Made for creators</strong><small>Creative resources</small></span>
+        </div>
+
+        <article class="art-card art-card-back">
+          <div class="poster-topline">NOVA / VISUAL ARCHIVE</div>
+          <div class="poster-sun"></div>
+          <div class="poster-landscape"></div>
+          <div class="poster-caption">FIND YOUR<br>OWN UNIVERSE.</div>
+          <div class="poster-number">001 — 026</div>
+        </article>
+
+        <article class="art-card art-card-front">
+          <div class="poster-topline">EXPERIMENT / 002</div>
+          <div class="poster-abstract">
+            <div class="abstract-ring"></div>
+            <div class="abstract-orb"></div>
+            <div class="abstract-line"></div>
+          </div>
+          <div class="poster-side-label">CREATIVE FREEDOM</div>
+          <div class="poster-big-type">DREAM<br>IN<br>COLOUR<span>.</span></div>
+          <div class="poster-bottom"><span>NOVA STUDIO</span><span>DESIGN LAB</span></div>
+        </article>
+
+        <div class="floating-tag tag-bottom">
+          <span class="sparkle-icon">✧</span>
+          <span><strong>Ideas, reimagined</strong><small>Make something different</small></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <span>BUILT FOR BIG IDEAS</span>
+      <span class="trust-divider"></span>
+      <span>DESIGN RESOURCES</span>
+      <span class="trust-divider"></span>
+      <span>AI-INSPIRED CREATIVITY</span>
+      <span class="trust-divider"></span>
+      <span>MADE TO STAND OUT</span>
+    </section>
+
+    <section class="section-shell ai-section" id="ai-lab">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow"><span class="eyebrow-star">✳</span> THE CREATIVE PLAYGROUND</div>
+          <h2>Your imagination.<br><span class="gradient-text">A whole new universe.</span></h2>
+        </div>
+        <p>Start with an idea. Shape a concept. Explore what you can create.</p>
+      </div>
+
+      <div class="ai-workspace">
+        <div class="ai-workspace-top">
+          <div class="workspace-title">
+            <span class="ai-logo">✳</span>
+            <div><strong>NOVA AI LAB</strong><small>Creative concept studio</small></div>
+          </div>
+          <span class="demo-badge"><span></span> EXPLORATION MODE</span>
+        </div>
+
+        <form id="aiForm" class="ai-form">
+          <label for="aiPrompt">WHAT ARE WE CREATING TODAY?</label>
+          <textarea id="aiPrompt" maxlength="500" rows="3" placeholder="A futuristic sneaker advertisement with electric-blue lighting, bold typography and a cinematic atmosphere..." required></textarea>
+
+          <div class="ai-controls">
+            <div class="style-control">
+              <label for="artStyle">VISUAL STYLE</label>
+              <select id="artStyle">
+                <option value="Futuristic">Futuristic</option>
+                <option value="Minimal">Minimal</option>
+                <option value="Editorial">Editorial</option>
+                <option value="Dreamy">Dreamy</option>
+                <option value="Abstract">Abstract</option>
+              </select>
+            </div>
+
+            <div class="style-control">
+              <label for="artType">PROJECT TYPE</label>
+              <select id="artType">
+                <option value="Poster">Poster design</option>
+                <option value="Social post">Social media post</option>
+                <option value="Wallpaper">Wallpaper</option>
+                <option value="Brand concept">Brand concept</option>
+              </select>
+            </div>
+
+            <button type="submit" class="button button-primary ai-generate-button">
+              <span>✳</span> Explore my idea <span>↗</span>
+            </button>
+          </div>
+        </form>
+
+        <div id="aiResult" class="ai-result" aria-live="polite">
+          <div class="result-placeholder">
+            <span class="placeholder-sparkle">✧</span>
+            <strong>Your next idea starts here.</strong>
+            <p>Your concept preview will appear in this space.</p>
+          </div>
+        </div>
+
+        <p class="demo-note">This initial version is a concept-demo interface. Real AI image generation will require connecting an AI service.</p>
+      </div>
+    </section>
+
+    <section class="section-shell marketplace-section" id="marketplace">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow"><span class="eyebrow-star">✳</span> THE NOVA COLLECTION</div>
+          <h2>Good design changes <span class="gradient-text">everything.</span></h2>
+        </div>
+        <a href="#productGrid" class="text-link">Explore collection ↗</a>
+      </div>
+
+      <div class="marketplace-tools">
+        <div class="category-tabs" id="categoryTabs">
+          <button class="category-tab active" data-category="All">All resources</button>
+          <button class="category-tab" data-category="Posters">Posters</button>
+          <button class="category-tab" data-category="Presentations">Presentations</button>
+          <button class="category-tab" data-category="Social Media">Social media</button>
+          <button class="category-tab" data-category="Branding">Branding</button>
+        </div>
+
+        <div class="marketplace-filters">
+          <label class="search-box">
+            <span>⌕</span>
+            <input type="search" id="searchInput" placeholder="Find your next idea..." aria-label="Search products">
+          </label>
+          <select id="sortSelect" aria-label="Sort products">
+            <option value="featured">Featured</option>
+            <option value="price-low">Price: low to high</option>
+            <option value="price-high">Price: high to low</option>
+            <option value="name">Name: A–Z</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="productGrid" class="product-grid">
+        <div class="loading-products">Preparing the collection...</div>
+      </div>
+
+      <div id="emptyProducts" class="empty-state" hidden>
+        <span>⌕</span>
+        <h3>No designs found</h3>
+        <p>Try another search or category.</p>
+        <button class="button button-secondary" id="resetFilters">Reset filters</button>
+      </div>
+    </section>
+
+    <section class="services-section" id="services">
+      <div class="section-shell services-inner">
+        <div class="services-copy">
+          <div class="eyebrow"><span class="eyebrow-star">✳</span> MADE WITH PURPOSE</div>
+          <h2>Your vision.<br>Our creative <span class="gradient-text">energy.</span></h2>
+          <p>Need a design that feels like you? Explore creative services for brands, businesses and big ideas.</p>
+          <a class="button button-primary" href="#contact">Let's create together <span>↗</span></a>
+        </div>
+
+        <div class="service-list">
+          <article class="service-item">
+            <span class="service-number">01</span>
+            <div><h3>Poster & Advertising Design</h3><p>Promotional graphics made to catch attention.</p></div>
+            <span class="service-arrow">↗</span>
+          </article>
+          <article class="service-item">
+            <span class="service-number">02</span>
+            <div><h3>Social Media Creatives</h3><p>Consistent, memorable content for your brand.</p></div>
+            <span class="service-arrow">↗</span>
+          </article>
+          <article class="service-item">
+            <span class="service-number">03</span>
+            <div><h3>Presentations & Branding</h3><p>Clear stories and visual identities.</p></div>
+            <span class="service-arrow">↗</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell contact-section" id="contact">
+      <div class="contact-card">
+        <div class="contact-sparkle">✳</div>
+        <div class="eyebrow">HAVE AN IDEA IN MIND?</div>
+        <h2>Let's make something<br><span class="gradient-text">worth remembering.</span></h2>
+        <p>Tell us about your next creative project.</p>
+        <a class="button button-primary" href="mailto:hello@novastudio.example?subject=NOVA%20STUDIO%20Project%20Inquiry">Start a project <span>↗</span></a>
+        <small>Demo contact address — replace it with your real contact email before publishing.</small>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a href="#home" class="brand footer-brand">
+      <span class="brand-symbol">N<span>✳</span></span>
+      <span class="brand-name">NOVA<span>STUDIO</span></span>
+    </a>
+    <p>Make room for imagination.</p>
+    <span>© <span id="currentYear"></span> NOVA STUDIO</span>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping bag" aria-hidden="true">
+    <div class="drawer-header">
+      <div><span class="eyebrow">YOUR COLLECTION</span><h2>Your bag <span id="drawerCartCount">(0)</span></h2></div>
+      <button class="close-button" id="closeCart" aria-label="Close bag">×</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total"><span>Subtotal</span><strong id="cartTotal">₹0</strong></div>
+      <button id="checkoutButton" class="button button-primary checkout-button">Continue to checkout ↗</button>
+      <p>Demo checkout only. No payment will be collected.</p>
+    </div>
+  </aside>
+
+  <section class="modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <button class="close-button modal-close" id="closeProductModal" aria-label="Close details">×</button>
+    <div id="productModalContent"></div>
+  </section>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  
+<!-- NOVA STUDIO: CUSTOM DESIGN SERVICES -->
+<section class="custom-services" id="custom-services">
+  <div class="services-container">
+
+    <div class="services-heading">
+      <span class="services-label">MADE FOR YOU</span>
+      <h2>Let's Create Something <span>Unique.</span></h2>
+      <p>
+        Have an idea? Let's turn it into a design that makes
+        your brand stand out.
+      </p>
+    </div>
+
+    <div class="services-grid">
+
+      <article class="service-card">
+        <div class="service-icon">✦</div>
+        <span class="service-number">01</span>
+        <h3>Poster Design</h3>
+        <p>Eye-catching posters for events, advertising and promotions.</p>
+        <button class="service-order-btn" data-service="Poster Design">
+          Request a Design <span>↗</span>
+        </button>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">◈</div>
+        <span class="service-number">02</span>
+        <h3>Logo & Branding</h3>
+        <p>Memorable logos and visual identities for your brand.</p>
+        <button class="service-order-btn" data-service="Logo & Branding">
+          Request a Design <span>↗</span>
+        </button>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">▧</div>
+        <span class="service-number">03</span>
+        <h3>Social Media</h3>
+        <p>Creative posts, stories and templates for social platforms.</p>
+        <button class="service-order-btn" data-service="Social Media Design">
+          Request a Design <span>↗</span>
+        </button>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">▶</div>
+        <span class="service-number">04</span>
+        <h3>Video Editing</h3>
+        <p>Engaging Reels, Shorts and promotional video edits.</p>
+        <button class="service-order-btn" data-service="Video Editing">
+          Request a Design <span>↗</span>
+        </button>
+      </article>
+
+    </div>
+
+    <div class="services-footer">
+      <span>YOUR VISION. OUR CREATIVITY.</span>
+      <a href="#custom-services">Let's work together ↑</a>
+    </div>
+
+  </div>
+</section>
+<!-- END NOVA STUDIO CUSTOM DESIGN SERVICES -->
+
+<!-- NOVA STUDIO: CUSTOM ORDER FORM -->
+<section class="custom-order" id="custom-order">
+  <div class="order-container">
+
+    <div class="order-heading">
+      <span class="order-label">YOUR NEXT BIG IDEA</span>
+      <h2>Start Your <span>Project.</span></h2>
+      <p>Share your vision with us. We'll help bring it to life.</p>
+    </div>
+
+    <form id="customOrderForm" class="order-form">
+
+      <div class="order-field">
+        <label for="orderName">Your name *</label>
+        <input
+          type="text"
+          id="orderName"
+          name="name"
+          placeholder="Enter your name"
+          required
+          maxlength="100"
+        />
+      </div>
+
+      <div class="order-field">
+        <label for="orderEmail">Email address *</label>
+        <input
+          type="email"
+          id="orderEmail"
+          name="email"
+          placeholder="you@example.com"
+          required
+          maxlength="150"
+        />
+      </div>
+
+      <div class="order-field">
+        <label for="orderService">What do you need? *</label>
+        <select id="orderService" name="service" required>
+          <option value="">Choose a service</option>
+          <option value="Poster Design">Poster Design</option>
+          <option value="Logo & Branding">Logo & Branding</option>
+          <option value="Social Media Design">Social Media Design</option>
+          <option value="Video Editing">Video Editing</option>
+          <option value="Other">Other creative work</option>
+        </select>
+      </div>
+
+      <div class="order-field">
+        <label for="orderBudget">Your budget (INR) *</label>
+        <select id="orderBudget" name="budget" required>
+          <option value="">Choose your budget</option>
+          <option value="Under ₹500">Under ₹500</option>
+          <option value="₹500–₹1,000">₹500–₹1,000</option>
+          <option value="₹1,000–₹2,500">₹1,000–₹2,500</option>
+          <option value="₹2,500+">₹2,500+</option>
+          <option value="Need a quote">I'd like a quote</option>
+        </select>
+      </div>
+
+      <div class="order-field order-field-full">
+        <label for="orderDetails">Describe your idea *</label>
+        <textarea
+          id="orderDetails"
+          name="details"
+          rows="5"
+          placeholder="Tell us about your design, preferred colours, text, style and deadline..."
+          required
+          minlength="10"
+          maxlength="2000"
+        ></textarea>
+      </div>
+
+      <div class="order-field order-field-full">
+        <label for="orderReference">Reference link (optional)</label>
+        <input
+          type="url"
+          id="orderReference"
+          name="reference"
+          placeholder="https://example.com/your-reference"
+          maxlength="500"
+        />
+      </div>
+
+      <p class="order-privacy">
+        Your details will be used to respond to your design request.
+        Please don't include passwords or sensitive personal information.
+      </p>
+
+      <button type="submit" class="order-submit">
+        Submit Design Request <span>↗</span>
+      </button>
+
+      <p id="orderFormMessage" class="order-form-message"
+         role="status" aria-live="polite"></p>
+
+    </form>
+  </div>
+</section>
+<!-- END NOVA STUDIO CUSTOM ORDER FORM -->
+</body>
+</html>
